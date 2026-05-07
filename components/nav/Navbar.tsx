@@ -51,12 +51,12 @@ export default function Navbar() {
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 60 }}>
 
         {/* Logo */}
-        <a href="#" style={{ display: 'flex', alignItems: 'baseline', gap: 8, textDecoration: 'none' }}>
+        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
           <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.4rem', fontWeight: 600, color: '#FFFFFF', letterSpacing: '0.03em' }}>
-            Sam®
+            Consultex
           </span>
           <span style={{ fontFamily: 'var(--font-ui)', fontSize: '0.6rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)' }}>
-            by Consultex
+            Sports
           </span>
         </a>
 
