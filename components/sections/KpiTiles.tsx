@@ -35,7 +35,7 @@ function AnimatedCounter({
 
 export default function KpiTiles() {
   return (
-    <section id="kpi" style={{ backgroundColor: '#001E3A', padding: 'var(--space-section) 0' }}>
+    <section id="kpi" style={{ backgroundColor: '#003F74', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
 
         <motion.div

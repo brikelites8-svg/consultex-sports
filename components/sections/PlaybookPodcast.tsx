@@ -33,10 +33,10 @@ export default function PlaybookPodcast() {
             viewport={VIEWPORT_ONCE}
           >
             <motion.p variants={fadeUp} className="section-label">Now Launching</motion.p>
-            <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#001E3A', marginBottom: '0.75rem', lineHeight: 1.2 }}>
+            <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#003F74', marginBottom: '0.75rem', lineHeight: 1.2 }}>
               The Playbook with Sam Mitchell
             </motion.h2>
-            <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.05rem, 1.5vw, 1.25rem)', fontWeight: 400, color: '#001E3A', marginBottom: '1.25rem', lineHeight: 1.4 }}>
+            <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.05rem, 1.5vw, 1.25rem)', fontWeight: 400, color: '#003F74', marginBottom: '1.25rem', lineHeight: 1.4 }}>
               The show every athlete family needs — and has never had.
             </motion.p>
             <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.75, color: '#5A6A7A', marginBottom: '2rem' }}>
@@ -61,7 +61,7 @@ export default function PlaybookPodcast() {
                 href="#contact"
                 whileHover={{ opacity: 0.88, y: -1 }}
                 transition={{ duration: 0.22 }}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#001E3A', textDecoration: 'none', borderBottom: '1px solid rgba(35,56,73,0.3)', paddingBottom: 2 }}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#003F74', textDecoration: 'none', borderBottom: '1px solid rgba(35,56,73,0.3)', paddingBottom: 2 }}
               >
                 Subscribe to the Playbook →
               </motion.a>
@@ -96,7 +96,7 @@ export default function PlaybookPodcast() {
                       {ep.guest}
                     </p>
                   </div>
-                  <p style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(0.95rem, 1.2vw, 1.1rem)', fontStyle: 'italic', color: '#001E3A', lineHeight: 1.45 }}>
+                  <p style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(0.95rem, 1.2vw, 1.1rem)', fontStyle: 'italic', color: '#003F74', lineHeight: 1.45 }}>
                     {ep.title}
                   </p>
                 </motion.div>

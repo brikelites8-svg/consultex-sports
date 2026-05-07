@@ -5,7 +5,7 @@ import { fadeUp, slideInRight, staggerContainer, VIEWPORT_ONCE } from '@/lib/ani
 
 export default function SamMitchell() {
   return (
-    <section id="sam-mitchell" style={{ backgroundColor: '#001E3A', padding: 'var(--space-section) 0', position: 'relative', overflow: 'hidden' }}>
+    <section id="sam-mitchell" style={{ backgroundColor: '#003F74', padding: 'var(--space-section) 0', position: 'relative', overflow: 'hidden' }}>
       <div className="hero-grain" style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.018 }} />
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>

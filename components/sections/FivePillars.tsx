@@ -47,7 +47,7 @@ export default function FivePillars() {
           <motion.p variants={fadeUp} className="section-label">The Five Pillars</motion.p>
           <motion.h2
             variants={fadeUp}
-            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#001E3A', lineHeight: 1.2, marginBottom: '1rem' }}
+            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#003F74', lineHeight: 1.2, marginBottom: '1rem' }}
           >
             Everything the student-athlete needs. In one place.
           </motion.h2>
@@ -111,7 +111,7 @@ function PillarCard({ pillar }: { pillar: typeof PILLARS[0] }) {
         <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, color: 'rgba(35,56,73,0.12)', lineHeight: 1 }}>
           {pillar.num}
         </span>
-        <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#001E3A', lineHeight: 1.25 }}>
+        <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#003F74', lineHeight: 1.25 }}>
           {pillar.title}
         </h3>
       </div>

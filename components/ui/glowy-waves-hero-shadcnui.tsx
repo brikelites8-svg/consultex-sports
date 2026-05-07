@@ -146,7 +146,7 @@ export function GlowyWavesHero() {
       mouseRef.current.y += (targetMouseRef.current.y - mouseRef.current.y) * smoothing
 
       const grad = ctx.createLinearGradient(0, 0, 0, canvas.height)
-      grad.addColorStop(0, '#001E3A')
+      grad.addColorStop(0, '#003F74')
       grad.addColorStop(1, '#1b2c3a')
       ctx.fillStyle = grad
       ctx.fillRect(0, 0, canvas.width, canvas.height)

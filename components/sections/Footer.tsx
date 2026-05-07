@@ -11,7 +11,7 @@ const LINKS = {
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#001E3A', borderTop: '1px solid rgba(255,255,255,0.07)' }}>
+    <footer style={{ backgroundColor: '#003F74', borderTop: '1px solid rgba(255,255,255,0.07)' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '5rem 2rem 2.5rem' }}>
 
         <motion.div

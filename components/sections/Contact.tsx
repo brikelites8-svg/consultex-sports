@@ -19,7 +19,7 @@ const fieldBase: React.CSSProperties = {
   width: '100%',
   fontFamily: 'var(--font-ui)',
   fontSize: 'var(--text-body)',
-  color: '#001E3A',
+  color: '#003F74',
   backgroundColor: '#EEF2F7',
   border: '1px solid rgba(35,56,73,0.22)',
   borderRadius: 3,
@@ -51,7 +51,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" style={{ backgroundColor: '#001E3A', padding: 'var(--space-section) 0', position: 'relative', overflow: 'hidden' }}>
+    <section id="contact" style={{ backgroundColor: '#003F74', padding: 'var(--space-section) 0', position: 'relative', overflow: 'hidden' }}>
       <div className="hero-grain" style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.015 }} />
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 760, margin: '0 auto', padding: '0 2rem' }}>

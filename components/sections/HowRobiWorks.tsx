@@ -39,7 +39,7 @@ export default function HowRobiWorks() {
           </motion.p>
           <motion.h2
             variants={fadeUp}
-            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#001E3A', maxWidth: 480 }}
+            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#003F74', maxWidth: 480 }}
           >
             Meet Robi®, Your Consultant.
           </motion.h2>
@@ -107,7 +107,7 @@ export default function HowRobiWorks() {
                         fontFamily: 'var(--font-editorial)',
                         fontSize: '1.25rem',
                         fontWeight: 300,
-                        color: '#001E3A',
+                        color: '#003F74',
                       }}
                     >
                       {step.num}
@@ -121,7 +121,7 @@ export default function HowRobiWorks() {
                     fontFamily: 'var(--font-editorial)',
                     fontSize: 'var(--text-h3)',
                     fontWeight: 600,
-                    color: '#001E3A',
+                    color: '#003F74',
                     lineHeight: 1.3,
                   }}
                 >
@@ -163,7 +163,7 @@ export default function HowRobiWorks() {
               fontFamily: 'var(--font-editorial)',
               fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
               fontStyle: 'italic',
-              color: '#001E3A',
+              color: '#003F74',
               lineHeight: 1.6,
             }}
           >

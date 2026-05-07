@@ -34,7 +34,7 @@ export default function HowSamWorks() {
           style={{ marginBottom: 'clamp(3.5rem, 6vw, 5rem)' }}
         >
           <motion.p variants={fadeUp} className="section-label">How Sam® Works</motion.p>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#001E3A', marginBottom: '1rem' }}>
+          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#003F74', marginBottom: '1rem' }}>
             Insights → Strategy → Execution.
           </motion.h2>
           <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.7, color: '#5A6A7A', maxWidth: 520 }}>
@@ -66,7 +66,7 @@ export default function HowSamWorks() {
                 {/* Step bubble */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
                   <div style={{ width: 56, height: 56, borderRadius: '50%', border: '1px solid rgba(35,56,73,0.18)', backgroundColor: '#EEF2F7', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.2rem', fontWeight: 300, color: '#001E3A' }}>
+                    <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.2rem', fontWeight: 300, color: '#003F74' }}>
                       0{i + 1}
                     </span>
                   </div>
@@ -74,7 +74,7 @@ export default function HowSamWorks() {
                 <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#F5A623' }}>
                   {step.label}
                 </p>
-                <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#001E3A', lineHeight: 1.3 }}>
+                <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#003F74', lineHeight: 1.3 }}>
                   {step.title}
                 </h3>
                 <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.75, color: '#5A6A7A' }}>

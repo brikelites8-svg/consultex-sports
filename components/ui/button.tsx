@@ -31,7 +31,7 @@ const VARIANTS: Record<ButtonVariant, React.CSSProperties> = {
     border: '1px solid #F5A623',
   },
   ghost: { background: 'transparent', color: 'rgba(255,255,255,0.8)', border: '1px solid rgba(255,255,255,0.25)' },
-  ai:    { background: '#001E3A', color: '#FFFFFF' },
+  ai:    { background: '#003F74', color: '#FFFFFF' },
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(

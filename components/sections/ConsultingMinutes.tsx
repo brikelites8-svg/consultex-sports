@@ -5,7 +5,7 @@ import { fadeUp, staggerContainer, VIEWPORT_ONCE } from '@/lib/animations'
 
 export default function ConsultingMinutes() {
   return (
-    <section style={{ backgroundColor: '#001E3A', padding: 'clamp(4rem, 8vw, 6rem) 0' }}>
+    <section style={{ backgroundColor: '#003F74', padding: 'clamp(4rem, 8vw, 6rem) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
         <motion.div
           variants={staggerContainer}

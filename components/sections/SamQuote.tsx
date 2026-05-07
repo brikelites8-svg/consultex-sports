@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { motion } from 'framer-motion'
 
 export default function SamQuote() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -80,7 +81,12 @@ export default function SamQuote() {
           textAlign: 'center',
         }}>
 
-          <blockquote style={{ margin: 0 }}>
+          <motion.blockquote
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: false, margin: '0px 0px -100px 0px' }}
+            style={{ margin: 0 }}>
             <p style={{
               fontFamily: 'var(--font-editorial)',
               fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',
@@ -94,10 +100,19 @@ export default function SamQuote() {
               weren't good enough, but because nobody ever gave them a real plan. Sam® is that
               plan. And I'm that someone. For every athlete."
             </p>
-          </blockquote>
+          </motion.blockquote>
 
-          <div>
-            <div style={{ width: 40, height: 1, background: '#F5A623', margin: '0 auto 1.5rem' }} />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+            viewport={{ once: false, margin: '0px 0px -100px 0px' }}>
+            <motion.div
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
+              transition={{ duration: 0.6, delay: 0.4, ease: 'easeOut' }}
+              viewport={{ once: false, margin: '0px 0px -100px 0px' }}
+              style={{ width: 40, height: 1, background: '#F5A623', margin: '0 auto 1.5rem', originX: 0.5 }} />
             <p style={{
               fontFamily: 'var(--font-ui)',
               fontSize: 'var(--text-label)',
@@ -108,7 +123,7 @@ export default function SamQuote() {
             }}>
               Sam Mitchell · NBA Coach of the Year · Head of Sports Practice, Consultex
             </p>
-          </div>
+          </motion.div>
         </div>
 
         {/* Subtle scroll hint — fades as user scrolls */}

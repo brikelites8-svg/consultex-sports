@@ -65,7 +65,7 @@ export default function ServicesInDepth() {
         {/* Header */}
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={VIEWPORT_ONCE} style={{ marginBottom: 'clamp(3rem, 5vw, 4.5rem)' }}>
           <motion.p variants={fadeUp} className="section-label">Services In Depth</motion.p>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#001E3A', maxWidth: 480 }}>
+          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#003F74', maxWidth: 480 }}>
             What Sam® actually delivers.
           </motion.h2>
           <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.7, color: '#5A6A7A', maxWidth: 560, marginTop: '0.75rem' }}>
@@ -81,7 +81,7 @@ export default function ServicesInDepth() {
           viewport={VIEWPORT_ONCE}
           style={{ backgroundColor: '#FFFFFF', borderRadius: 6, padding: 'clamp(2rem, 4vw, 3rem)', boxShadow: '0 4px 32px rgba(35,56,73,0.08)', marginBottom: '1.5rem', position: 'relative', overflow: 'hidden' }}
         >
-          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: '#001E3A' }} />
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: '#003F74' }} />
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'start' }} className="nil-grid">
             {/* Left */}
@@ -89,7 +89,7 @@ export default function ServicesInDepth() {
               <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#F5A623', marginBottom: '0.75rem' }}>
                 Signature Services
               </p>
-              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 600, color: '#001E3A', lineHeight: 1.2, marginBottom: '1rem' }}>
+              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 600, color: '#003F74', lineHeight: 1.2, marginBottom: '1rem' }}>
                 NIL Strategy Briefings
               </h3>
               <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.75, color: '#5A6A7A', marginBottom: '1.5rem' }}>
@@ -115,7 +115,7 @@ export default function ServicesInDepth() {
               {NIL_TILES.map(tile => (
                 <div key={tile.num} style={{ padding: '1.25rem', backgroundColor: '#EEF2F7', borderRadius: 4, border: '1px solid rgba(35,56,73,0.07)' }}>
                   <div style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.5rem', fontWeight: 300, color: 'rgba(35,56,73,0.2)', lineHeight: 1, marginBottom: '0.5rem' }}>{tile.num}</div>
-                  <div style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.05rem', fontWeight: 600, color: '#001E3A', marginBottom: '0.5rem' }}>{tile.title}</div>
+                  <div style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.05rem', fontWeight: 600, color: '#003F74', marginBottom: '0.5rem' }}>{tile.title}</div>
                   <div style={{ fontFamily: 'var(--font-ui)', fontSize: '0.8rem', lineHeight: 1.55, color: '#5A6A7A' }}>{tile.desc}</div>
                 </div>
               ))}
@@ -147,7 +147,7 @@ export default function ServicesInDepth() {
                   {svc.label}
                 </p>
               )}
-              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#001E3A', marginBottom: '0.875rem', lineHeight: 1.25 }}>
+              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#003F74', marginBottom: '0.875rem', lineHeight: 1.25 }}>
                 {svc.title}
               </h3>
               <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', lineHeight: 1.7, color: '#5A6A7A', marginBottom: '1.25rem' }}>

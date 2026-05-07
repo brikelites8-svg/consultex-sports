@@ -28,7 +28,7 @@ const STATS = [
 
 export default function HeroStats() {
   return (
-    <section style={{ backgroundColor: '#001E3A' }}>
+    <section style={{ backgroundColor: '#003F74' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
         <motion.div
           variants={staggerContainer}
