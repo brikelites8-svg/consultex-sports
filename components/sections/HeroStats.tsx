@@ -1,7 +1,22 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, useMotionValue, useTransform, useEffect } from 'framer-motion'
 import { staggerContainer, fadeUp, VIEWPORT_ONCE } from '@/lib/animations'
+import { useInView } from 'react-intersection-observer'
+
+function Counter({ value }: { value: number }) {
+  const count = useMotionValue(0)
+  const rounded = useTransform(count, (latest) => Math.round(latest))
+  const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: true })
+
+  useEffect(() => {
+    if (inView) {
+      count.set(value, { duration: 2 })
+    }
+  }, [inView, count, value])
+
+  return <motion.span ref={ref}>{rounded}</motion.span>
+}
 
 const STATS = [
   { value: '5',    label: 'Success Pillars' },
@@ -36,7 +51,12 @@ export default function HeroStats() {
                 <div style={{ position: 'absolute', right: 0, top: '20%', height: '60%', width: 1, background: 'rgba(255,255,255,0.1)' }} />
               )}
               <div style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#1e70a0', lineHeight: 1, marginBottom: '0.5rem', fontVariantNumeric: 'tabular-nums' }}>
-                {stat.value}
+                {stat.value === '24/7' ? '24/7' : (
+                  <>
+                    {stat.value.startsWith('$') && '$'}
+                    <Counter value={parseInt(stat.value.replace('$', ''))} />
+                  </>
+                )}
               </div>
               <div style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.5)' }}>
                 {stat.label}
