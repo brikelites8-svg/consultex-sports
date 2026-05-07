@@ -2,6 +2,7 @@ import Navbar from '@/components/nav/Navbar'
 import Hero from '@/components/sections/Hero'
 import SamMitchell from '@/components/sections/SamMitchell'
 import FivePillars from '@/components/sections/FivePillars'
+import SportsCapabilities from '@/components/sections/SportsCabilities'
 import HowSamWorks from '@/components/sections/HowSamWorks'
 import ConsultingMinutes from '@/components/sections/ConsultingMinutes'
 import ServicesInDepth from '@/components/sections/ServicesInDepth'
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <SamMitchell />
       <FivePillars />
+      <SportsCapabilities />
       <HowSamWorks />
       <ConsultingMinutes />
       <ServicesInDepth />
