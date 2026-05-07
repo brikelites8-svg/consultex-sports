@@ -45,12 +45,6 @@ coverage/
 .env.test
 .env.production.local
 
-# Video/Media files (large files)
-*.mp4
-*.mov
-*.avi
-*.mkv
-
 # Backup files
 *.bak
 *.backup
