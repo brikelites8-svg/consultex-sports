@@ -1,8 +1,32 @@
 'use client'
 
-import { motion, type Variants } from 'framer-motion'
+import { motion, type Variants, useMotionValue, useTransform } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
 import { useEffect, useRef } from 'react'
+import { useInView } from 'react-intersection-observer'
+
+function Counter({ value }: { value: number }) {
+  const ref = useRef<HTMLSpanElement>(null)
+  const { ref: inViewRef, inView } = useInView({ threshold: 0.5, triggerOnce: true })
+
+  useEffect(() => {
+    if (!inView || !ref.current) return
+
+    let current = 0
+    const increment = value / 20
+    const timer = setInterval(() => {
+      current += increment
+      if (current >= value) {
+        ref.current!.textContent = String(Math.round(value))
+        clearInterval(timer)
+      } else {
+        ref.current!.textContent = String(Math.round(current))
+      }
+    }, 40)
+  }, [inView, value])
+
+  return <span ref={(e) => { ref.current = e; inViewRef(e) }} />
+}
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 type Point = { x: number; y: number }
@@ -312,7 +336,12 @@ export function GlowyWavesHero() {
                   {stat.label}
                 </div>
                 <div style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.75rem, 3vw, 2.75rem)', fontWeight: 300, color: '#1e70a0', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
-                  {stat.value}
+                  {stat.value === '24/7' ? '24/7' : (
+                    <>
+                      {stat.value.startsWith('$') && '$'}
+                      <Counter value={parseInt(stat.value.replace('$', ''))} />
+                    </>
+                  )}
                 </div>
               </motion.div>
             ))}

@@ -1,6 +1,7 @@
 'use client'
 
-import { motion, useMotionValue, useTransform, useEffect } from 'framer-motion'
+import { motion, useMotionValue, useTransform } from 'framer-motion'
+import { useEffect } from 'react'
 import { staggerContainer, fadeUp, VIEWPORT_ONCE } from '@/lib/animations'
 import { useInView } from 'react-intersection-observer'
 

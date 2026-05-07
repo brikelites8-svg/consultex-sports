@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand colors — Consultex brand guidelines (May 2026) */
-  --color-navy:         #233849;
-  --color-navy-dark:    #233849;
-  --color-navy-mid:     #233849;
-  --color-surface:      #fefefe;
-  --color-surface-alt:  #f0f0f4;
+  /* Brand colors — Consultex Navy & Cream Palette (May 2026) */
+  --color-navy:         #003F74;
+  --color-navy-dark:    #001E3A;
+  --color-navy-mid:     #002A52;
+  --color-surface:      #EEF2F7;
+  --color-surface-alt:  #F7F9FB;
   --color-white:        #FFFFFF;
-  --color-teal:         #1e70a0;
-  --color-teal-dark:    #2394ae;
-  --color-teal-light:   #5ab8d4;
-  --color-amber:        #f3a31e;
+  --color-teal:         #F5A623;
+  --color-teal-dark:    #F5A623;
+  --color-teal-light:   #F5A623;
+  --color-amber:        #F5A623;
   --color-success:      #4CAF7D;
   --color-red:          #E84B3A;
-  --color-text-primary: #233849;
-  --color-text-muted:   #5A6A7A;
+  --color-text-primary: #0B1722;
+  --color-text-muted:   #3A4754;
 
   --font-editorial: var(--font-cormorant), Georgia, serif;
   --font-ui:        var(--font-dm-sans), system-ui, sans-serif;
@@ -23,21 +23,21 @@
 
 /* ─── CSS Custom Properties ─── */
 :root {
-  --color-navy:         #233849;
-  --color-navy-dark:    #233849;
-  --color-navy-mid:     #233849;
-  --color-surface:      #fefefe;
-  --color-surface-alt:  #f0f0f4;
+  --color-navy:         #003F74;
+  --color-navy-dark:    #001E3A;
+  --color-navy-mid:     #002A52;
+  --color-surface:      #EEF2F7;
+  --color-surface-alt:  #F7F9FB;
   --color-white:        #FFFFFF;
-  --color-teal:         #1e70a0;
-  --color-teal-dark:    #2394ae;
-  --color-teal-light:   #5ab8d4;
-  --color-amber:        #f3a31e;
+  --color-teal:         #F5A623;
+  --color-teal-dark:    #F5A623;
+  --color-teal-light:   #F5A623;
+  --color-amber:        #F5A623;
   --color-success:      #4CAF7D;
   --color-red:          #E84B3A;
-  --color-accent:       #1e70a0;   /* alias — ocean blue is the primary accent */
-  --color-text-primary: #233849;
-  --color-text-muted:   #5A6A7A;
+  --color-accent:       #F5A623;   /* alias — amber is the primary accent */
+  --color-text-primary: #0B1722;
+  --color-text-muted:   #3A4754;
   --sidebar-bg:         #fefefe;
 
   --text-hero:    clamp(3.5rem, 7vw, 6.5rem);
@@ -90,6 +90,13 @@ body {
   background-size: 200px 200px;
   opacity: 0.018;
   mix-blend-mode: overlay;
+}
+
+/* ─── Pinstripe overlay for dark sections ─── */
+.pinstripe {
+  background: repeating-linear-gradient(118deg, #001E3A 0 14px, #002A52 14px 16px);
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 /* ─── Buttons ─── */

@@ -1,6 +1,5 @@
 import Navbar from '@/components/nav/Navbar'
 import Hero from '@/components/sections/Hero'
-import HeroStats from '@/components/sections/HeroStats'
 import SamMitchell from '@/components/sections/SamMitchell'
 import FivePillars from '@/components/sections/FivePillars'
 import HowSamWorks from '@/components/sections/HowSamWorks'
@@ -18,7 +17,6 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <HeroStats />
       <SamMitchell />
       <FivePillars />
       <HowSamWorks />
