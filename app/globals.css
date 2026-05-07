@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors — Consultex brand guidelines (May 2026) */
+  --color-navy:         #233849;
+  --color-navy-dark:    #233849;
+  --color-navy-mid:     #233849;
+  --color-surface:      #fefefe;
+  --color-surface-alt:  #f0f0f4;
+  --color-white:        #FFFFFF;
+  --color-teal:         #1e70a0;
+  --color-teal-dark:    #2394ae;
+  --color-teal-light:   #5ab8d4;
+  --color-amber:        #f3a31e;
+  --color-success:      #4CAF7D;
+  --color-red:          #E84B3A;
+  --color-text-primary: #233849;
+  --color-text-muted:   #5A6A7A;
+
+  --font-editorial: var(--font-cormorant), Georgia, serif;
+  --font-ui:        var(--font-dm-sans), system-ui, sans-serif;
+}
+
+/* ─── CSS Custom Properties ─── */
+:root {
+  --color-navy:         #233849;
+  --color-navy-dark:    #233849;
+  --color-navy-mid:     #233849;
+  --color-surface:      #fefefe;
+  --color-surface-alt:  #f0f0f4;
+  --color-white:        #FFFFFF;
+  --color-teal:         #1e70a0;
+  --color-teal-dark:    #2394ae;
+  --color-teal-light:   #5ab8d4;
+  --color-amber:        #f3a31e;
+  --color-success:      #4CAF7D;
+  --color-red:          #E84B3A;
+  --color-accent:       #1e70a0;   /* alias — ocean blue is the primary accent */
+  --color-text-primary: #233849;
+  --color-text-muted:   #5A6A7A;
+  --sidebar-bg:         #fefefe;
+
+  --text-hero:    clamp(3.5rem, 7vw, 6.5rem);
+  --text-h1:      clamp(2.5rem, 4vw, 4rem);
+  --text-h2:      clamp(1.75rem, 2.5vw, 2.5rem);
+  --text-h3:      clamp(1.25rem, 1.75vw, 1.75rem);
+  --text-body:    1.0625rem;
+  --text-small:   0.875rem;
+  --text-label:   0.75rem;
+
+  --space-section: clamp(5rem, 10vw, 9rem);
+
+  --shadow-card:  0 4px 32px rgba(35, 56, 73, 0.08);
+  --shadow-hover: 0 12px 48px rgba(35, 56, 73, 0.16);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration: 320ms;
+}
+
+/* ─── Base ─── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Hero Background ─── */
+.hero-mesh {
+  background:
+    radial-gradient(ellipse 70% 80% at 10% 40%, rgba(30,112,160,0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 60% at 85% 65%, rgba(35,148,174,0.1)  0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 55% 5%,  rgba(30,112,160,0.05) 0%, transparent 60%);
+  background-size: 200% 200%;
+  animation: meshDrift 14s ease-in-out infinite;
+}
+
+@keyframes meshDrift {
+  0%,  100% { background-position: 0% 50%,   100% 50%, 50% 0%; }
+  33%        { background-position: 30% 30%,   70% 70%, 60% 50%; }
+  66%        { background-position: 10% 70%,   90% 30%, 40% 100%; }
+}
+
+.hero-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.68' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.018;
+  mix-blend-mode: overlay;
+}
+
+/* ─── Buttons ─── */
+.btn-primary {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: var(--text-small);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--color-teal);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity var(--duration) var(--ease-out),
+              transform var(--duration) var(--ease-out);
+}
+.btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+.btn-ghost {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: var(--text-small);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 0.875rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color var(--duration) var(--ease-out),
+              color var(--duration) var(--ease-out),
+              transform var(--duration) var(--ease-out);
+}
+.btn-ghost:hover { border-color: rgba(255,255,255,0.55); color: #FFFFFF; transform: translateY(-1px); }
+
+.btn-ai {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: var(--text-small);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--color-navy-dark);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity var(--duration) var(--ease-out),
+              transform var(--duration) var(--ease-out);
+}
+.btn-ai:hover { opacity: 0.88; transform: translateY(-1px); }
+
+/* ─── Section Label ─── */
+.section-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin-bottom: 0.75rem;
+}
+
+.section-label-light {
+  font-family: var(--font-ui);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Service card top accent line ─── */
+.service-card-accent {
+  position: absolute;
+  top: 0; left: 50%;
+  height: 2px;
+  background: var(--color-teal);
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  transition: transform var(--duration) var(--ease-out);
+}
+.service-card:hover .service-card-accent { transform: translateX(-50%) scaleX(1); }
+
+/* ─── Tooltip ─── */
+.tooltip-wrapper { position: relative; display: inline-flex; align-items: center; gap: 4px; }
+.tooltip-trigger { font-size: 11px; color: var(--color-text-muted); cursor: default; user-select: none; }
+.tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  background: var(--color-navy-dark);
+  color: rgba(255,255,255,0.85);
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: 240px;
+  z-index: 10;
+  font-family: var(--font-ui);
+  line-height: 1.5;
+}
+.tooltip-trigger:focus + .tooltip-content,
+.tooltip-wrapper:hover .tooltip-content { display: block; }
+
+/* ─── Reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

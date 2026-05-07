@@ -1,0 +1,277 @@
+{
+  "product": {
+    "name": "Sam®",
+    "tagline": "The Student-Athlete Success Platform",
+    "nav": {
+      "phone": "866-261-6030",
+      "links": ["Home", "Solutions", "Pricing", "Hire Robi®", "Insights", "About", "Contact"],
+      "label": "Expertise, Executed."
+    }
+  },
+  "sections": {
+    "hero": {
+      "headline": "Every student-athlete's personal strategist, coach, and advisor — on call, 24/7.",
+      "copy": "Sam® is the first AI-powered platform built for the whole student-athlete — athletic development, NIL strategy, academic success, financial literacy, and career pathway. Five dimensions. One platform. Delivered in the voice of Sam Mitchell, NBA Coach of the Year. Starting at $25/month.",
+      "cta": [
+        {"text": "Get Your Playbook", "type": "primary"},
+        {"text": "See how it works", "type": "secondary"}
+      ]
+    },
+    "stats": [
+      {"value": "5", "label": "Success Pillars"},
+      {"value": "$25", "label": "Per Month"},
+      {"value": "60", "label": "Average annual revenue lost from unworked denials"},
+      {"value": "24/7", "label": "Always On"}
+    ],
+    "samMitchell": {
+      "name": "SAM MITCHELL",
+      "title": "NBA COACH OF THE YEAR · HEAD OF SPORTS PRACTICE",
+      "quote": "Every kid who opens this app gets me as their coach, their strategist, and their advisor. Not a training video — me, on call, 24/7."
+    },
+    "pillars": {
+      "heading": "Everything the student-athlete needs. In one place.",
+      "copy": "Every competitor owns one dimension. Sam® owns all five — giving every athlete access to the level of support that used to require a six-figure family budget.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Athletic Development",
+          "description": "Personalized 90-day training plans, skill assessment across 7 dimensions, position-specific coaching focus, and nutrition protocols — all built on Sam Mitchell's proven framework."
+        },
+        {
+          "number": "02",
+          "title": "NIL Strategy",
+          "description": "Consulting-grade briefings, deal evaluation scorecards, brand positioning plans, financial roadmaps, and 30-day action plans. Robi® walks each athlete through via live voice Q&A."
+        },
+        {
+          "number": "03",
+          "title": "Academic Success",
+          "description": "NCAA eligibility monitoring, core course tracking, and 24/7 tutoring support built around demanding practice and travel schedules. Help when you need it — not during office hours."
+        },
+        {
+          "number": "04",
+          "title": "Financial Literacy",
+          "description": "NIL earnings management, tax basics, agent evaluation, deal structures, and financial roadmaps that grow with the athlete's income. The money conversation every athlete needs."
+        },
+        {
+          "number": "05",
+          "title": "Career Pathway",
+          "description": "Life beyond athletics — degree alignment, industry pathways, network building while still competing, and post-sport transition planning. The 50 years after the sport end, prepared."
+        }
+      ]
+    },
+    "howItWorks": {
+      "heading": "Insights → Strategy → Execution.",
+      "copy": "Sam® runs the same consulting-grade process that Robi® delivers to businesses — applied to the student-athlete's career.",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Sam® examines the athlete",
+          "description": "Sam® builds a complete picture — skill assessments, academic standing, NIL baseline, competitive level, and goals — delivering an honest assessment before recommending what to do next. No guessing. No generics."
+        },
+        {
+          "number": "2",
+          "title": "Sam® presents the plan",
+          "description": "Robi® delivers a live Strategic Briefing in Sam Mitchell's voice — not a static PDF. Takes questions in real time. Adjusts recommendations on the spot. The same experience a $500/hr consultant delivers, included in every plan."
+        },
+        {
+          "number": "3",
+          "title": "The athlete acts on it",
+          "description": "90-day training blocks, NIL action plans, academic milestones, and career pathway steps — tracked through the Sam® dashboard with weekly coaching prompts and a full playbook refresh every quarter."
+        }
+      ]
+    },
+    "consultingMinutes": {
+      "heading": "Every plan includes monthly consulting minutes with Robi®",
+      "stat": "60 MIN / MONTH INCLUDED",
+      "note": "Additional: $5 / minute"
+    },
+    "services": [
+      {
+        "title": "NIL Strategy Briefings",
+        "description": "Consulting-grade NIL strategy delivered in Sam's voice. Not a blog post — a personalized strategic briefing with a deal scorecard, brand positioning plan, financial roadmap, and 30-day action plan.",
+        "bullets": [
+          "Personal brand positioning — 3-pillar strategy tied to the athlete's story and market",
+          "Deal evaluation scorecard — rate every inbound NIL opportunity against brand fit and risk",
+          "Financial roadmap — earnings projections, tax obligations, agent fees, savings targets",
+          "30-day action plan — specific steps, deadlines, and owners with Robi® live walkthrough"
+        ],
+        "features": [
+          {"num": "01", "title": "Brand Positioning", "desc": "3-pillar strategy tied to story, platform, and local market"},
+          {"num": "02", "title": "Deal Scorecard", "desc": "Rate every NIL opportunity on brand fit, financial value, and risk"},
+          {"num": "03", "title": "Financial Roadmap", "desc": "Earnings projections, tax obligations, agent fees, and savings targets"},
+          {"num": "04", "title": "30-Day Action Plan", "desc": "Robi® walks through it live in Sam's voice using consulting minutes"}
+        ]
+      },
+      {
+        "title": "90-Day Training Playbook",
+        "description": "Personalized to position, level, and primary skill gap. Built on Sam Mitchell's framework for developing players who get recruited at the next level.",
+        "bullets": [
+          "7-dimension skill assessment and gap analysis",
+          "3-phase training block with weekly on-court and off-court targets",
+          "Game-day nutrition protocol and recovery standards",
+          "Coaching focus — what college coaches actually watch beyond stats"
+        ]
+      },
+      {
+        "title": "College Pathway",
+        "description": "Division-level match scoring, scholarship value projections, and a grade-by-grade recruiting timeline through signing day. No sugarcoating — just the truth about where you stand and what it takes to get where you want to go.",
+        "bullets": [
+          "D1 / D2 / D3 / NAIA pathway match with Sam® development score",
+          "September 1 junior year contact window preparation",
+          "NCAA eligibility monitoring and core course tracking",
+          "Camp and showcase calendar by season and geography"
+        ]
+      },
+      {
+        "title": "Academic Success",
+        "description": "Tutoring and advising built around practice schedules and travel. When a 15-year-old gets back from an AAU tournament at midnight and has a chemistry test Tuesday morning — Robi® is there.",
+        "bullets": [
+          "24/7 tutoring around practice, games, and travel schedules",
+          "GPA monitoring with proactive alerts before problems become crises",
+          "NCAA Clearinghouse registration guidance and timeline",
+          "Test prep timeline and score benchmarks by division"
+        ]
+      },
+      {
+        "title": "Financial Literacy",
+        "description": "78% of professional athletes are broke within 5 years of retirement. Sam® gives student-athletes the financial framework they need before they need it — not after.",
+        "bullets": [
+          "NIL earnings management from first dollar earned",
+          "Tax basics, agent fees, and deal structure literacy",
+          "Savings and investment roadmap that grows with income",
+          "Agent evaluation framework — before you sign anything"
+        ]
+      }
+    ],
+    "closingQuote": {
+      "text": "I've seen thousands of talented kids never get their shot — not because they weren't good enough, but because nobody ever gave them a real plan. Sam® is that plan. And I'm that someone. For every athlete.",
+      "attribution": "SAM MITCHELL · NBA COACH OF THE YEAR · HEAD OF SPORTS PRACTICE, CONSULTEX"
+    },
+    "podcast": {
+      "heading": "The Playbook with Sam Mitchell",
+      "subheading": "The show every athlete family needs — and has never had.",
+      "description": "Sam Mitchell sits down weekly with the people who hold the keys to every young athlete's future — coaches, college recruiters, NIL attorneys, financial advisors, and athletes themselves. Every episode ends with Sam's direct coaching note to the listener. Long-form. Honest. Actionable.",
+      "episodes": [
+        {
+          "topic": "Recruiting",
+          "title": "The 10 things that eliminate a recruit before we watch a single film clip",
+          "guest": "D1 Head Coach"
+        },
+        {
+          "topic": "NIL Strategy",
+          "title": "The NIL mistakes that end careers before they start",
+          "guest": "Sports NIL Attorney"
+        },
+        {
+          "topic": "Financial Literacy",
+          "title": "78% of NFL players are broke within 5 years — here's why",
+          "guest": "Sports Financial Advisor"
+        },
+        {
+          "topic": "Life After Sports",
+          "title": "What nobody told me about going pro — and what I wish they had",
+          "guest": "Former NBA Player"
+        }
+      ],
+      "cta": "Subscribe to the Playbook →"
+    },
+    "buyers": [
+      {
+        "label": "FOR ATHLETES & FAMILIES",
+        "product": "Sam® Athlete Passport",
+        "description": "Every student-athlete gets a personal coach, strategist, and advisor in Sam Mitchell. Quarterly briefings, weekly coaching prompts, 60 consulting minutes per month, 24/7 tutoring, NIL strategy, and college pathway monitoring.",
+        "price": "$25/month",
+        "stat": "60 min CONSULTING INCLUDED"
+      },
+      {
+        "label": "FOR COACHES & TRAINERS",
+        "product": "Sam® Team Dashboard",
+        "description": "Run up to 20 athletes through the Sam® platform. Individual playbooks per player. Consulting minutes per athlete per month. Parent-facing reports. Roster analytics. Pre-season, mid-season, and post-season editions.",
+        "price": "Pricing TBD",
+        "stat": "20 Athletes Max"
+      },
+      {
+        "label": "FOR LEAGUES & ORGANIZATIONS",
+        "product": "Sam® League Intelligence",
+        "description": "GRPA counties, YMCA, AAU programs, and rec departments. Every registered athlete receives a Sam® Passport with consulting minutes as part of league registration. Aggregate analytics, co-branded activation, and full Sam Mitchell branded experience.",
+        "price": "Pricing TBD",
+        "stat": "Org Wide Access"
+      }
+    ],
+    "pricing": [
+      {
+        "product": "Sam® Athlete Passport",
+        "price": "Starting at $25/user/month",
+        "features": [
+          "Quarterly 21-section Strategic Briefing",
+          "Sam's personal coaching note every quarter",
+          "60 consulting minutes with Robi® per month",
+          "Weekly coaching prompt from Sam",
+          "24/7 academic tutoring",
+          "NIL strategy and deal evaluation",
+          "College pathway monitoring and eligibility alerts",
+          "Ask Sam voice AI — 24/7"
+        ]
+      },
+      {
+        "product": "Sam® Team Dashboard",
+        "price": "Per program/month",
+        "status": "PRICING TBD",
+        "features": [
+          "Up to 20 athletes on the platform",
+          "Individual quarterly briefings per player",
+          "Consulting minutes per athlete per month",
+          "Parent-facing reports and progress summaries",
+          "Roster analytics dashboard",
+          "Pre, mid, and post-season editions",
+          "Sam Mitchell branding for your program"
+        ]
+      },
+      {
+        "product": "Sam® League Intelligence",
+        "price": "Per organization/month",
+        "status": "PRICING TBD",
+        "features": [
+          "Every registered athlete gets a Sam® Passport",
+          "Consulting minutes included per athlete",
+          "Aggregate league analytics and reporting",
+          "Co-branded Sam Mitchell activation",
+          "Customized for GRPA, YMCA, AAU structure",
+          "Live event activation support",
+          "Dedicated account management"
+        ]
+      }
+    ],
+    "demo": {
+      "heading": "READY TO TALK? BOOK A DEMO",
+      "copy": "Explore cutting-edge tools that elevate your brand, accelerate revenue, and transform your corporate culture. Book a demo and start your journey towards market leadership today.",
+      "formFields": [
+        "What are your interests",
+        "Email",
+        "Phone",
+        "First Name",
+        "Last Name",
+        "Company",
+        "Business Zip Code",
+        "Employee Count",
+        "Job Title",
+        "What's the biggest problem that keeps you up at night?"
+      ],
+      "cta": [
+        {"text": "What can we help you achieve? — Take Action"},
+        {"text": "Where will your career take you? — Take Action"}
+      ]
+    }
+  },
+  "footer": {
+    "email": "info@consultexai.com",
+    "phone": "866-261-6030",
+    "quickLinks": ["Home", "Hire Robi®", "Pricing", "Integrations", "About", "Events", "Our Team", "Contact", "Support", "Blog", "FAQs", "Privacy Policy", "Security", "Terms of Service"],
+    "legal": "© 2026 Consultex All Rights Reserved. 2487 Cedarcrest Rd. Acworth, GA. Ste 712. 30101, United States"
+  },
+  "flags": [
+    "Section 7 sub-copy reads like RCM placeholder — needs sports-specific copy",
+    "Stats bar 60-revenue stat needs confirmation for sports context",
+    "Plans 2 & 3 pricing TBD — confirm if final pricing available"
+  ]
+}
