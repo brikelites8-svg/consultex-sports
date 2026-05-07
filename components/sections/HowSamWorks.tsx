@@ -11,7 +11,6 @@ const fadeInFromLeft = {
     transition: {
       delay: i * 0.35,
       duration: 0.9,
-      ease: [0.16, 1, 0.3, 1],
     },
   }),
 }
