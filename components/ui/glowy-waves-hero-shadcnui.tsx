@@ -2,12 +2,17 @@
 
 import { motion, type Variants, useMotionValue, useTransform } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 function Counter({ value }: { value: number }) {
   const ref = useRef<HTMLSpanElement>(null)
   const { ref: inViewRef, inView } = useInView({ threshold: 0.5, triggerOnce: true })
+
+  const setRefs = useCallback((node: HTMLSpanElement | null) => {
+    ;(ref as any).current = node
+    inViewRef(node)
+  }, [inViewRef])
 
   useEffect(() => {
     if (!inView || !ref.current) return
@@ -25,7 +30,7 @@ function Counter({ value }: { value: number }) {
     }, 40)
   }, [inView, value])
 
-  return <span ref={(e) => { ref.current = e; inViewRef(e) }} />
+  return <span ref={setRefs} />
 }
 
 // ─── Types ────────────────────────────────────────────────────────────────────

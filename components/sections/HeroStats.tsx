@@ -1,22 +1,36 @@
 'use client'
 
-import { motion, useMotionValue, useTransform } from 'framer-motion'
-import { useEffect } from 'react'
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion'
+import { useEffect, useRef, useCallback } from 'react'
 import { staggerContainer, fadeUp, VIEWPORT_ONCE } from '@/lib/animations'
 import { useInView } from 'react-intersection-observer'
 
 function Counter({ value }: { value: number }) {
-  const count = useMotionValue(0)
-  const rounded = useTransform(count, (latest) => Math.round(latest))
-  const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: true })
+  const ref = useRef<HTMLSpanElement>(null)
+  const { ref: inViewRef, inView } = useInView({ threshold: 0.5, triggerOnce: true })
+
+  const setRefs = useCallback((node: HTMLSpanElement | null) => {
+    ;(ref as any).current = node
+    inViewRef(node)
+  }, [inViewRef])
 
   useEffect(() => {
-    if (inView) {
-      count.set(value, { duration: 2 })
-    }
-  }, [inView, count, value])
+    if (!inView || !ref.current) return
 
-  return <motion.span ref={ref}>{rounded}</motion.span>
+    let current = 0
+    const increment = value / 20
+    const timer = setInterval(() => {
+      current += increment
+      if (current >= value) {
+        ref.current!.textContent = String(Math.round(value))
+        clearInterval(timer)
+      } else {
+        ref.current!.textContent = String(Math.round(current))
+      }
+    }, 40)
+  }, [inView, value])
+
+  return <span ref={setRefs} />
 }
 
 const STATS = [
