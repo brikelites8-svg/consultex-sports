@@ -20,14 +20,14 @@ export default function Home() {
       <Hero />
       <SamMitchell />
       <FivePillars />
-      <SportsCapabilities />
+      <SamQuote />
       <HowSamWorks />
       <ConsultingMinutes />
       <ServicesInDepth />
-      <SamQuote />
       <PlaybookPodcast />
       <WhoSamServes />
       <Pricing />
+      <SportsCapabilities />
       <Contact />
       <Footer />
     </main>

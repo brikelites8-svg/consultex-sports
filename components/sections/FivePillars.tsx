@@ -2,8 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { fadeUp, staggerContainer, VIEWPORT_ONCE } from '@/lib/animations'
-import { BentoGrid, type BentoItem } from '@/components/ui/bento-grid'
-import { Zap, TrendingUp, BookOpen, DollarSign, Compass } from 'lucide-react'
 
 const PILLARS = [
   {
@@ -32,28 +30,6 @@ const PILLARS = [
     body: 'Life beyond athletics — degree alignment, industry pathways, network building while still competing, and post-sport transition planning. The 50 years after the sport end, prepared.',
   },
 ]
-
-const PILLAR_ICONS = [
-  <Zap className="w-4 h-4 text-blue-500" />,
-  <TrendingUp className="w-4 h-4 text-emerald-500" />,
-  <BookOpen className="w-4 h-4 text-purple-500" />,
-  <DollarSign className="w-4 h-4 text-sky-500" />,
-  <Compass className="w-4 h-4 text-orange-500" />,
-]
-
-const bentoItems: BentoItem[] = PILLARS.map((pillar, index) => ({
-  title: pillar.title,
-  description: pillar.body,
-  icon: PILLAR_ICONS[index],
-  meta: `Pillar ${pillar.num}`,
-  status: 'Essential',
-  tags: index === 0 ? ['Training', 'Skills'] :
-        index === 1 ? ['Strategy', 'Deals'] :
-        index === 2 ? ['Education', 'Support'] :
-        index === 3 ? ['Finance', 'Planning'] :
-        ['Career', 'Growth'],
-  colSpan: index < 3 ? 1 : 1,
-}))
 
 export default function FivePillars() {
   return (
@@ -84,9 +60,64 @@ export default function FivePillars() {
           </motion.p>
         </motion.div>
 
-        {/* Bento Grid Pillars */}
-        <BentoGrid items={bentoItems} />
+        {/* Pillars: 3-2 layout */}
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={VIEWPORT_ONCE}
+          style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
+        >
+          {/* Row 1: 01 02 03 */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }} className="pillars-row-1">
+            {PILLARS.slice(0, 3).map(pillar => (
+              <PillarCard key={pillar.num} pillar={pillar} />
+            ))}
+          </div>
+          {/* Row 2: 04 05 (centered) */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem', maxWidth: 'calc((100% - 1.5rem) * 2/3 + 1.5rem)', margin: '0 auto', width: '100%' }} className="pillars-row-2">
+            {PILLARS.slice(3).map(pillar => (
+              <PillarCard key={pillar.num} pillar={pillar} />
+            ))}
+          </div>
+        </motion.div>
       </div>
+
+      <style>{`
+        @media (max-width: 1023px) {
+          .pillars-row-1 { grid-template-columns: repeat(2, 1fr) !important; }
+          .pillars-row-2 { grid-template-columns: repeat(2, 1fr) !important; max-width: 100% !important; }
+        }
+        @media (max-width: 639px) {
+          .pillars-row-1 { grid-template-columns: 1fr !important; }
+          .pillars-row-2 { grid-template-columns: 1fr !important; max-width: 100% !important; }
+        }
+      `}</style>
     </section>
+  )
+}
+
+function PillarCard({ pillar }: { pillar: typeof PILLARS[0] }) {
+  return (
+    <motion.div
+      variants={fadeUp}
+      whileHover={{ y: -4, boxShadow: '0 12px 48px rgba(35,56,73,0.14)' }}
+      transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
+      className="service-card"
+      style={{ backgroundColor: '#FFFFFF', borderRadius: 6, padding: '2rem', boxShadow: '0 4px 32px rgba(35,56,73,0.07)', position: 'relative', overflow: 'hidden' }}
+    >
+      <div className="service-card-accent" />
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: '1.25rem' }}>
+        <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, color: 'rgba(35,56,73,0.12)', lineHeight: 1 }}>
+          {pillar.num}
+        </span>
+        <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#003F74', lineHeight: 1.25 }}>
+          {pillar.title}
+        </h3>
+      </div>
+      <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.75, color: '#5A6A7A' }}>
+        {pillar.body}
+      </p>
+    </motion.div>
   )
 }

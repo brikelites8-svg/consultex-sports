@@ -7,7 +7,7 @@ const PLANS = [
   {
     label: 'Athlete & Family',
     product: 'Sam® Athlete Passport',
-    price: '$25',
+    price: '25',
     priceSuffix: '/user/month',
     status: 'Available Now',
     statusColor: '#F5A623',

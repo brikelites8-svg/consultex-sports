@@ -31,8 +31,8 @@ export default function Navbar() {
       transition={{ duration: 0.7, ease: EASE_OUT }}
       style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
-        transition: 'backdrop-filter 300ms, background 300ms',
-        background: scrolled ? 'rgba(35,56,73,0.9)' : '#003F74',
+        transition: 'backdrop-filter 300ms',
+        background: '#003F74',
         backdropFilter: scrolled ? 'blur(18px)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(18px)' : 'none',
         borderBottom: '1px solid rgba(255,255,255,0.07)',
@@ -51,8 +51,12 @@ export default function Navbar() {
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 60 }}>
 
         {/* Logo */}
-        <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', height: 40 }}>
-          <img src="/Consultex_LogoWhite.png" alt="Consultex Sports" style={{ height: '100%', width: 'auto' }} />
+        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', height: 40 }}>
+          <img src="/Consultex_LogoWhite.png" alt="Consultex" style={{ height: '100%', width: 'auto' }} />
+          <span style={{ color: 'rgba(255,255,255,0.3)', fontSize: '1.2rem' }}>|</span>
+          <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.1rem', fontWeight: 400, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.02em' }}>
+            Sports
+          </span>
         </a>
 
         {/* Desktop links */}

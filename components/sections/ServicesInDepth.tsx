@@ -12,7 +12,7 @@ const NIL_TILES = [
 
 const SERVICES = [
   {
-    label: null,
+    label: 'Student Athlete',
     title: '90-Day Training Playbook',
     desc: 'Personalized to position, level, and primary skill gap. Built on Sam Mitchell\'s framework for developing players who get recruited at the next level.',
     bullets: [

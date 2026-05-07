@@ -3,6 +3,19 @@
 import { motion } from 'framer-motion'
 import { fadeUp, staggerContainer, VIEWPORT_ONCE } from '@/lib/animations'
 
+const fadeInFromLeft = {
+  hidden: { opacity: 0, x: -40 },
+  visible: (i: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: i * 0.35,
+      duration: 0.9,
+      ease: [0.16, 1, 0.3, 1],
+    },
+  }),
+}
+
 const STEPS = [
   {
     label: 'Step 1 · Insights',
@@ -49,7 +62,7 @@ export default function HowSamWorks() {
             whileInView={{ scaleX: 1 }}
             viewport={VIEWPORT_ONCE}
             transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            style={{ position: 'absolute', top: 28, left: '16.66%', right: '16.66%', height: 1, background: 'linear-gradient(to right, rgba(35,56,73,0.1), rgba(35,56,73,0.45), rgba(35,56,73,0.1))', transformOrigin: 'left' }}
+            style={{ position: 'absolute', top: 25, left: '16.66%', right: '16.66%', height: 1, background: 'linear-gradient(to right, rgba(35,56,73,0.1), rgba(35,56,73,0.45), rgba(35,56,73,0.1))', transformOrigin: 'left', zIndex: 0 }}
             className="connector-line"
           />
 
@@ -62,10 +75,10 @@ export default function HowSamWorks() {
             className="steps-grid"
           >
             {STEPS.map((step, i) => (
-              <motion.div key={step.label} variants={fadeUp} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+              <motion.div key={step.label} variants={fadeInFromLeft} custom={i} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 {/* Step bubble */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-                  <div style={{ width: 56, height: 56, borderRadius: '50%', border: '1px solid rgba(35,56,73,0.18)', backgroundColor: '#EEF2F7', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14, position: 'relative', zIndex: 1 }}>
+                  <div style={{ width: 56, height: 56, borderRadius: '50%', border: '1px solid rgba(35,56,73,0.18)', backgroundColor: '#EEF2F7', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, position: 'relative', zIndex: 2 }}>
                     <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.2rem', fontWeight: 300, color: '#003F74' }}>
                       0{i + 1}
                     </span>
