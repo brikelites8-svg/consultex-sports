@@ -8,19 +8,19 @@ const CAPABILITIES = [
   {
     id: 'player',
     label: 'Player',
-    image: '/sports/player.jpg',
+    image: '/student.webp',
     content: "At Culturefy, we prioritize the personal and professional development of every player. Our AI-driven platform offers personalized recommendations to enhance skills based on shot chart analysis, physical conditioning, and historical performance trends. Players can log training sessions and receive alerts on potential injury risks, ensuring optimal performance with minimal downtime. Additionally, our AI-driven OKR (Objectives and Key Results) tracking aligns individual performance goals with team strategies, motivating and rewarding players for their contributions to overall success."
   },
   {
     id: 'coaching',
     label: 'Coaching Staff',
-    image: '/sports/coaching.jpg',
+    image: '/coaching.webp',
     content: "Our solutions empower coaching staff with data-driven strategies to develop effective offensive and defensive game plans. By analyzing shot charts and matchup data, coaches can tailor their strategies to leverage each player's strengths and exploit opposition weaknesses. Culturefy's platform also optimizes starting lineups and rotations based on real-time player health, fatigue levels, and matchup data. Coaches can monitor player compliance with training programs, adapt drills to address specific weaknesses, and track fitness improvements over time, ensuring that every player performs at their best."
   },
   {
     id: 'executive',
     label: 'Executive Team',
-    image: '/sports/executive.jpg',
+    image: '/executive.webp',
     content: "Culturefy supports the executive team in making informed decisions that drive team success. Our AI tools analyze prospective players to identify those who align with team needs and culture, uncovering undervalued opportunities in the talent market. Executive teams can evaluate contracts and salaries against performance metrics, ensuring competitiveness while managing budgets effectively. Moreover, our \"Fused Intelligence\" strategies foster a collaborative organizational culture, where continuous feedback loops help align staff at all levels with the team's shared vision."
   }
 ]
