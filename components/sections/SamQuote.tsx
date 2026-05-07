@@ -97,7 +97,7 @@ export default function SamQuote() {
           </blockquote>
 
           <div>
-            <div style={{ width: 40, height: 1, background: '#1e70a0', margin: '0 auto 1.5rem' }} />
+            <div style={{ width: 40, height: 1, background: '#F5A623', margin: '0 auto 1.5rem' }} />
             <p style={{
               fontFamily: 'var(--font-ui)',
               fontSize: 'var(--text-label)',

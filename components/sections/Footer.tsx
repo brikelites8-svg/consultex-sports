@@ -11,7 +11,7 @@ const LINKS = {
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#233849', borderTop: '1px solid rgba(255,255,255,0.07)' }}>
+    <footer style={{ backgroundColor: '#001E3A', borderTop: '1px solid rgba(255,255,255,0.07)' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '5rem 2rem 2.5rem' }}>
 
         <motion.div
@@ -44,7 +44,7 @@ export default function Footer() {
             <div style={{ marginTop: '1.75rem' }}>
               <a
                 href="#how-it-works"
-                style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.6rem 1.2rem', border: '1px solid rgba(30,112,160,0.4)', color: '#1e70a0', borderRadius: 3, textDecoration: 'none', display: 'inline-block' }}
+                style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.6rem 1.2rem', border: '1px solid rgba(30,112,160,0.4)', color: '#F5A623', borderRadius: 3, textDecoration: 'none', display: 'inline-block' }}
               >
                 Hire Robi® →
               </a>

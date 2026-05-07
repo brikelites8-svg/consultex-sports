@@ -32,7 +32,7 @@ export default function Navbar() {
       style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
         transition: 'backdrop-filter 300ms, background 300ms',
-        background: scrolled ? 'rgba(35,56,73,0.9)' : '#233849',
+        background: scrolled ? 'rgba(35,56,73,0.9)' : '#001E3A',
         backdropFilter: scrolled ? 'blur(18px)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(18px)' : 'none',
         borderBottom: '1px solid rgba(255,255,255,0.07)',
@@ -79,9 +79,9 @@ export default function Navbar() {
         <div className="hidden-mobile">
           <motion.a
             href="#pricing"
-            whileHover={{ backgroundColor: '#1e70a0', color: '#233849' }}
+            whileHover={{ backgroundColor: '#F5A623', color: '#001E3A' }}
             transition={{ duration: 0.22 }}
-            style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.6rem 1.4rem', border: '1px solid #1e70a0', color: '#1e70a0', borderRadius: 3, textDecoration: 'none', display: 'inline-block' }}
+            style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.6rem 1.4rem', border: '1px solid #F5A623', color: '#F5A623', borderRadius: 3, textDecoration: 'none', display: 'inline-block' }}
           >
             Get Your Playbook
           </motion.a>
@@ -114,7 +114,7 @@ export default function Navbar() {
             transition={{ duration: 0.3, ease: EASE_OUT }}
             style={{ overflow: 'hidden', borderTop: '1px solid rgba(255,255,255,0.08)' }}
           >
-            <div style={{ padding: '1.25rem 2rem', display: 'flex', flexDirection: 'column', gap: '1rem', background: '#233849' }}>
+            <div style={{ padding: '1.25rem 2rem', display: 'flex', flexDirection: 'column', gap: '1rem', background: '#001E3A' }}>
               {NAV_LINKS.map(link => (
                 <a key={link.label} href={link.href} onClick={() => setMobileOpen(false)}
                   style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}>
@@ -122,7 +122,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a href="#pricing" onClick={() => setMobileOpen(false)}
-                style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.7rem', border: '1px solid #1e70a0', color: '#1e70a0', borderRadius: 3, textDecoration: 'none', textAlign: 'center', marginTop: 8 }}>
+                style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.7rem', border: '1px solid #F5A623', color: '#F5A623', borderRadius: 3, textDecoration: 'none', textAlign: 'center', marginTop: 8 }}>
                 Get Your Playbook
               </a>
             </div>

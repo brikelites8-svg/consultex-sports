@@ -10,7 +10,7 @@ const PLANS = [
     price: '$25',
     priceSuffix: '/user/month',
     status: 'Available Now',
-    statusColor: '#1e70a0',
+    statusColor: '#F5A623',
     highlight: false,
     features: [
       'Quarterly 21-section Strategic Briefing',
@@ -66,7 +66,7 @@ const PLANS = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" style={{ backgroundColor: '#fefefe', padding: 'var(--space-section) 0' }}>
+    <section id="pricing" style={{ backgroundColor: '#EEF2F7', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
 
         <motion.div
@@ -77,7 +77,7 @@ export default function Pricing() {
           style={{ marginBottom: 'clamp(3rem, 5vw, 4.5rem)', maxWidth: 600 }}
         >
           <motion.p variants={fadeUp} className="section-label">Pricing</motion.p>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#233849', marginBottom: '1rem' }}>
+          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#001E3A', marginBottom: '1rem' }}>
             Access Sam®.
           </motion.h2>
           <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.7, color: '#5A6A7A' }}>
@@ -101,14 +101,14 @@ export default function Pricing() {
               transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
               style={{
                 display: 'flex', flexDirection: 'column',
-                backgroundColor: plan.highlight ? '#233849' : '#FFFFFF',
+                backgroundColor: plan.highlight ? '#001E3A' : '#FFFFFF',
                 borderRadius: 6, padding: '2.5rem 2rem',
                 boxShadow: plan.highlight ? '0 8px 48px rgba(35,56,73,0.22)' : '0 4px 32px rgba(35,56,73,0.08)',
                 border: plan.highlight ? '1px solid rgba(30,112,160,0.3)' : '1px solid rgba(35,56,73,0.07)',
                 position: 'relative', overflow: 'hidden',
               }}
             >
-              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: plan.highlight ? '#1e70a0' : '#233849' }} />
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: plan.highlight ? '#F5A623' : '#001E3A' }} />
 
               {/* Status badge */}
               <div style={{ display: 'inline-block', alignSelf: 'flex-start', fontFamily: 'var(--font-ui)', fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: plan.statusColor, marginBottom: '0.75rem', border: `1px solid ${plan.statusColor}`, padding: '0.2rem 0.6rem', borderRadius: 2 }}>
@@ -118,13 +118,13 @@ export default function Pricing() {
               <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: plan.highlight ? 'rgba(255,255,255,0.4)' : 'rgba(35,56,73,0.45)', marginBottom: '0.4rem' }}>
                 {plan.label}
               </p>
-              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: plan.highlight ? '#FFFFFF' : '#233849', marginBottom: '1rem', lineHeight: 1.25 }}>
+              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: plan.highlight ? '#FFFFFF' : '#001E3A', marginBottom: '1rem', lineHeight: 1.25 }}>
                 {plan.product}
               </h3>
 
               {/* Price */}
               <div style={{ marginBottom: '1.5rem', paddingBottom: '1.5rem', borderBottom: `1px solid ${plan.highlight ? 'rgba(255,255,255,0.1)' : 'rgba(35,56,73,0.08)'}` }}>
-                <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2.25rem, 3.5vw, 3rem)', fontWeight: 300, color: plan.highlight ? '#FFFFFF' : '#233849', lineHeight: 1 }}>
+                <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2.25rem, 3.5vw, 3rem)', fontWeight: 300, color: plan.highlight ? '#FFFFFF' : '#001E3A', lineHeight: 1 }}>
                   {plan.price === 'TBD' ? '' : '$'}{plan.price}
                 </span>
                 <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', color: plan.highlight ? 'rgba(255,255,255,0.45)' : '#5A6A7A', marginLeft: 4 }}>
@@ -136,7 +136,7 @@ export default function Pricing() {
               <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2rem', display: 'flex', flexDirection: 'column', gap: '0.7rem', flex: 1 }}>
                 {plan.features.map(f => (
                   <li key={f} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                    <span style={{ color: '#1e70a0', flexShrink: 0, marginTop: 3, fontSize: '0.6rem' }}>◆</span>
+                    <span style={{ color: '#F5A623', flexShrink: 0, marginTop: 3, fontSize: '0.6rem' }}>◆</span>
                     <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', lineHeight: 1.55, color: plan.highlight ? 'rgba(255,255,255,0.75)' : '#5A6A7A' }}>
                       {f}
                     </span>
@@ -147,7 +147,7 @@ export default function Pricing() {
               {/* CTA */}
               <a
                 href="#contact"
-                style={{ display: 'block', textAlign: 'center', fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.875rem', borderRadius: 3, textDecoration: 'none', backgroundColor: plan.highlight ? '#1e70a0' : 'transparent', color: plan.highlight ? '#FFFFFF' : '#233849', border: plan.highlight ? 'none' : '1px solid rgba(35,56,73,0.3)', transition: 'opacity 220ms, transform 220ms' }}
+                style={{ display: 'block', textAlign: 'center', fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.875rem', borderRadius: 3, textDecoration: 'none', backgroundColor: plan.highlight ? '#F5A623' : 'transparent', color: plan.highlight ? '#FFFFFF' : '#001E3A', border: plan.highlight ? 'none' : '1px solid rgba(35,56,73,0.3)', transition: 'opacity 220ms, transform 220ms' }}
                 onMouseEnter={e => { e.currentTarget.style.opacity = '0.85'; e.currentTarget.style.transform = 'translateY(-1px)' }}
                 onMouseLeave={e => { e.currentTarget.style.opacity = '1';    e.currentTarget.style.transform = 'translateY(0)' }}
               >
@@ -165,7 +165,7 @@ export default function Pricing() {
           viewport={VIEWPORT_ONCE}
           style={{ marginTop: 'clamp(3rem, 5vw, 4rem)', textAlign: 'center' }}
         >
-          <p style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.1rem, 1.75vw, 1.4rem)', fontStyle: 'italic', color: '#233849', marginBottom: '0.75rem' }}>
+          <p style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.1rem, 1.75vw, 1.4rem)', fontStyle: 'italic', color: '#001E3A', marginBottom: '0.75rem' }}>
             "Every athlete deserves access to the best — not just the ones whose families can afford it."
           </p>
           <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(35,56,73,0.4)' }}>

@@ -5,7 +5,7 @@ import { fadeUp, staggerContainer, VIEWPORT_ONCE } from '@/lib/animations'
 
 export default function ConsultingMinutes() {
   return (
-    <section style={{ backgroundColor: '#233849', padding: 'clamp(4rem, 8vw, 6rem) 0' }}>
+    <section style={{ backgroundColor: '#001E3A', padding: 'clamp(4rem, 8vw, 6rem) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
         <motion.div
           variants={staggerContainer}
@@ -35,7 +35,7 @@ export default function ConsultingMinutes() {
             variants={fadeUp}
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', padding: 'clamp(2rem, 4vw, 3rem)', border: '1px solid rgba(30,112,160,0.25)', borderRadius: 6, background: 'rgba(0,0,0,0.12)', textAlign: 'center' }}
           >
-            <div style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(4.5rem, 8vw, 7rem)', fontWeight: 300, color: '#1e70a0', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
+            <div style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(4.5rem, 8vw, 7rem)', fontWeight: 300, color: '#F5A623', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
               60
             </div>
             <div style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.5)' }}>

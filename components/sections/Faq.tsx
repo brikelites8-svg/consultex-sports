@@ -52,13 +52,13 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         }}
         aria-expanded={open}
       >
-        <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#233849', lineHeight: 1.3 }}>
+        <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#001E3A', lineHeight: 1.3 }}>
           {q}
         </span>
         <motion.span
           animate={{ rotate: open ? 45 : 0 }}
           transition={{ duration: 0.25, ease: EASE_OUT }}
-          style={{ flexShrink: 0, fontSize: '1.25rem', color: '#233849', lineHeight: 1, display: 'flex', alignItems: 'center' }}
+          style={{ flexShrink: 0, fontSize: '1.25rem', color: '#001E3A', lineHeight: 1, display: 'flex', alignItems: 'center' }}
         >
           +
         </motion.span>
@@ -85,7 +85,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 
 export default function Faq() {
   return (
-    <section style={{ backgroundColor: '#fefefe', padding: 'var(--space-section) 0' }}>
+    <section style={{ backgroundColor: '#EEF2F7', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 800, margin: '0 auto', padding: '0 2rem' }}>
 
         <motion.div
@@ -98,7 +98,7 @@ export default function Faq() {
           <motion.p variants={fadeUp} className="section-label">FAQ</motion.p>
           <motion.h2
             variants={fadeUp}
-            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#233849' }}
+            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#001E3A' }}
           >
             Questions worth asking.
           </motion.h2>

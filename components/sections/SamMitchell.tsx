@@ -5,7 +5,7 @@ import { fadeUp, slideInRight, staggerContainer, VIEWPORT_ONCE } from '@/lib/ani
 
 export default function SamMitchell() {
   return (
-    <section id="sam-mitchell" style={{ backgroundColor: '#233849', padding: 'var(--space-section) 0', position: 'relative', overflow: 'hidden' }}>
+    <section id="sam-mitchell" style={{ backgroundColor: '#001E3A', padding: 'var(--space-section) 0', position: 'relative', overflow: 'hidden' }}>
       <div className="hero-grain" style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.018 }} />
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
@@ -18,13 +18,13 @@ export default function SamMitchell() {
             whileInView="visible"
             viewport={VIEWPORT_ONCE}
           >
-            <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1e70a0', marginBottom: '2rem' }}>
+            <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#F5A623', marginBottom: '2rem' }}>
               Powered by Sam Mitchell
             </motion.p>
 
             {/* Name block */}
             <motion.div variants={fadeUp} style={{ marginBottom: '1.5rem' }}>
-              <div style={{ width: 48, height: 2, backgroundColor: '#1e70a0', marginBottom: '1.5rem' }} />
+              <div style={{ width: 48, height: 2, backgroundColor: '#F5A623', marginBottom: '1.5rem' }} />
               <h2 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h1)', fontWeight: 600, color: '#FFFFFF', lineHeight: 1.05, letterSpacing: '0.02em', marginBottom: '0.75rem' }}>
                 Sam Mitchell
               </h2>
@@ -41,7 +41,7 @@ export default function SamMitchell() {
                 'Voice of the Sam® Platform',
               ].map(cred => (
                 <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <span style={{ color: '#1e70a0', fontSize: '0.6rem' }}>◆</span>
+                  <span style={{ color: '#F5A623', fontSize: '0.6rem' }}>◆</span>
                   <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', color: 'rgba(255,255,255,0.55)', letterSpacing: '0.02em' }}>
                     {cred}
                   </span>

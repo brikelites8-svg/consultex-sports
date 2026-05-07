@@ -19,8 +19,8 @@ const fieldBase: React.CSSProperties = {
   width: '100%',
   fontFamily: 'var(--font-ui)',
   fontSize: 'var(--text-body)',
-  color: '#233849',
-  backgroundColor: '#fefefe',
+  color: '#001E3A',
+  backgroundColor: '#EEF2F7',
   border: '1px solid rgba(35,56,73,0.22)',
   borderRadius: 3,
   padding: '0.875rem 1rem',
@@ -46,12 +46,12 @@ export default function Contact() {
     return {
       onFocus: () => setFocused(name),
       onBlur:  () => setFocused(null),
-      style: { ...fieldBase, ...(focused === name ? { borderColor: '#1e70a0' } : {}) },
+      style: { ...fieldBase, ...(focused === name ? { borderColor: '#F5A623' } : {}) },
     }
   }
 
   return (
-    <section id="contact" style={{ backgroundColor: '#233849', padding: 'var(--space-section) 0', position: 'relative', overflow: 'hidden' }}>
+    <section id="contact" style={{ backgroundColor: '#001E3A', padding: 'var(--space-section) 0', position: 'relative', overflow: 'hidden' }}>
       <div className="hero-grain" style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.015 }} />
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 760, margin: '0 auto', padding: '0 2rem' }}>
@@ -137,7 +137,7 @@ export default function Contact() {
           {/* Interests */}
           <motion.div variants={fadeUp}>
             <label style={labelStyle}>What Are Your Interests</label>
-            <select {...fp('interests')} style={{ ...fieldBase, ...(focused === 'interests' ? { borderColor: '#1e70a0' } : {}), cursor: 'pointer' }}>
+            <select {...fp('interests')} style={{ ...fieldBase, ...(focused === 'interests' ? { borderColor: '#F5A623' } : {}), cursor: 'pointer' }}>
               <option value="">Select an area</option>
               {INTERESTS.map(i => <option key={i} value={i}>{i}</option>)}
             </select>
@@ -150,7 +150,7 @@ export default function Contact() {
               rows={4}
               placeholder="Describe your situation in plain English — no jargon required."
               {...fp('problem')}
-              style={{ ...fieldBase, ...(focused === 'problem' ? { borderColor: '#1e70a0' } : {}), resize: 'vertical', minHeight: 96 }}
+              style={{ ...fieldBase, ...(focused === 'problem' ? { borderColor: '#F5A623' } : {}), resize: 'vertical', minHeight: 96 }}
             />
           </motion.div>
 
@@ -160,7 +160,7 @@ export default function Contact() {
               type="submit"
               whileHover={{ opacity: 0.88, y: -1 }}
               transition={{ duration: 0.22 }}
-              style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', backgroundColor: '#1e70a0', color: '#FFFFFF', border: 'none', borderRadius: 3, padding: '1rem', cursor: 'pointer' }}
+              style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', backgroundColor: '#F5A623', color: '#FFFFFF', border: 'none', borderRadius: 3, padding: '1rem', cursor: 'pointer' }}
             >
               What can we help you achieve? — Take Action
             </motion.button>

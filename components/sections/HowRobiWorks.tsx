@@ -23,7 +23,7 @@ const STEPS = [
 
 export default function HowRobiWorks() {
   return (
-    <section id="how-it-works" style={{ backgroundColor: '#fefefe', padding: 'var(--space-section) 0' }}>
+    <section id="how-it-works" style={{ backgroundColor: '#EEF2F7', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
 
         {/* Header */}
@@ -39,7 +39,7 @@ export default function HowRobiWorks() {
           </motion.p>
           <motion.h2
             variants={fadeUp}
-            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#233849', maxWidth: 480 }}
+            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#001E3A', maxWidth: 480 }}
           >
             Meet Robi®, Your Consultant.
           </motion.h2>
@@ -95,7 +95,7 @@ export default function HowRobiWorks() {
                       height: 56,
                       borderRadius: '50%',
                       border: '1px solid rgba(35,56,73,0.2)',
-                      backgroundColor: '#fefefe',
+                      backgroundColor: '#EEF2F7',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -107,7 +107,7 @@ export default function HowRobiWorks() {
                         fontFamily: 'var(--font-editorial)',
                         fontSize: '1.25rem',
                         fontWeight: 300,
-                        color: '#233849',
+                        color: '#001E3A',
                       }}
                     >
                       {step.num}
@@ -121,7 +121,7 @@ export default function HowRobiWorks() {
                     fontFamily: 'var(--font-editorial)',
                     fontSize: 'var(--text-h3)',
                     fontWeight: 600,
-                    color: '#233849',
+                    color: '#001E3A',
                     lineHeight: 1.3,
                   }}
                 >
@@ -163,7 +163,7 @@ export default function HowRobiWorks() {
               fontFamily: 'var(--font-editorial)',
               fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
               fontStyle: 'italic',
-              color: '#233849',
+              color: '#001E3A',
               lineHeight: 1.6,
             }}
           >

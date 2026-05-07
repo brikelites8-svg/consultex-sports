@@ -35,7 +35,7 @@ function AnimatedCounter({
 
 export default function KpiTiles() {
   return (
-    <section id="kpi" style={{ backgroundColor: '#233849', padding: 'var(--space-section) 0' }}>
+    <section id="kpi" style={{ backgroundColor: '#001E3A', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
 
         <motion.div
@@ -50,7 +50,7 @@ export default function KpiTiles() {
           </motion.p>
           <motion.h2
             variants={fadeUp}
-            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#fefefe' }}
+            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#EEF2F7' }}
           >
             Results speak in specifics.
           </motion.h2>
@@ -87,7 +87,7 @@ export default function KpiTiles() {
                   fontSize: 'clamp(4rem, 7vw, 7rem)',
                   fontWeight: 300,
                   lineHeight: 1,
-                  color: '#fefefe',
+                  color: '#EEF2F7',
                   fontVariantNumeric: 'tabular-nums',
                   marginBottom: '1rem',
                 }}

@@ -38,7 +38,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="services" style={{ backgroundColor: '#fefefe', padding: 'var(--space-section) 0' }}>
+    <section id="services" style={{ backgroundColor: '#EEF2F7', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
 
         {/* Header */}
@@ -54,7 +54,7 @@ export default function Services() {
           </motion.p>
           <motion.h2
             variants={fadeUp}
-            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#233849', maxWidth: 520 }}
+            style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#001E3A', maxWidth: 520 }}
           >
             Advisory built for the business of sport.
           </motion.h2>
@@ -90,7 +90,7 @@ export default function Services() {
               <div className="service-card-accent" />
 
               {/* Icon */}
-              <div style={{ fontSize: '1.25rem', color: '#233849', marginBottom: '1rem', opacity: 0.7 }}>
+              <div style={{ fontSize: '1.25rem', color: '#001E3A', marginBottom: '1rem', opacity: 0.7 }}>
                 {service.icon}
               </div>
 
@@ -100,7 +100,7 @@ export default function Services() {
                   fontFamily: 'var(--font-editorial)',
                   fontSize: 'var(--text-h3)',
                   fontWeight: 600,
-                  color: '#233849',
+                  color: '#001E3A',
                   marginBottom: '0.75rem',
                   lineHeight: 1.25,
                 }}

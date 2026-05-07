@@ -35,7 +35,7 @@ const TIERS = [
 
 export default function WhoSamServes() {
   return (
-    <section style={{ backgroundColor: '#f0f0f4', padding: 'var(--space-section) 0' }}>
+    <section style={{ backgroundColor: '#F7F9FB', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
 
         <motion.div
@@ -46,7 +46,7 @@ export default function WhoSamServes() {
           style={{ marginBottom: 'clamp(3rem, 5vw, 4.5rem)' }}
         >
           <motion.p variants={fadeUp} className="section-label">Who Sam® Serves</motion.p>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#233849', marginBottom: '0.75rem' }}>
+          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#001E3A', marginBottom: '0.75rem' }}>
             Three buyers. One platform.
           </motion.h2>
           <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.7, color: '#5A6A7A', maxWidth: 560 }}>
@@ -69,7 +69,7 @@ export default function WhoSamServes() {
               whileHover={{ y: -4, boxShadow: tier.highlight ? '0 20px 60px rgba(35,56,73,0.2)' : '0 12px 48px rgba(35,56,73,0.13)' }}
               transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
               style={{
-                backgroundColor: tier.highlight ? '#233849' : '#FFFFFF',
+                backgroundColor: tier.highlight ? '#001E3A' : '#FFFFFF',
                 borderRadius: 6,
                 padding: '2.25rem 2rem',
                 boxShadow: tier.highlight ? '0 8px 40px rgba(35,56,73,0.2)' : '0 4px 32px rgba(35,56,73,0.07)',
@@ -80,18 +80,18 @@ export default function WhoSamServes() {
                 flexDirection: 'column',
               }}
             >
-              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: tier.highlight ? '#1e70a0' : '#233849' }} />
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: tier.highlight ? '#F5A623' : '#001E3A' }} />
 
-              <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: tier.highlight ? '#1e70a0' : 'rgba(35,56,73,0.45)', marginBottom: '0.75rem' }}>
+              <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: tier.highlight ? '#F5A623' : 'rgba(35,56,73,0.45)', marginBottom: '0.75rem' }}>
                 {tier.label}
               </p>
-              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: tier.highlight ? '#FFFFFF' : '#233849', marginBottom: '1rem', lineHeight: 1.25 }}>
+              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: tier.highlight ? '#FFFFFF' : '#001E3A', marginBottom: '1rem', lineHeight: 1.25 }}>
                 {tier.product}
               </h3>
 
               {/* Stat */}
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: '1.25rem', paddingBottom: '1.25rem', borderBottom: `1px solid ${tier.highlight ? 'rgba(255,255,255,0.1)' : 'rgba(35,56,73,0.08)'}` }}>
-                <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, color: '#1e70a0', lineHeight: 1 }}>
+                <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, color: '#F5A623', lineHeight: 1 }}>
                   {tier.stat}
                 </span>
                 <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: tier.highlight ? 'rgba(255,255,255,0.45)' : 'rgba(35,56,73,0.4)' }}>
@@ -104,12 +104,12 @@ export default function WhoSamServes() {
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto' }}>
-                <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.5rem', fontWeight: 300, color: tier.highlight ? '#1e70a0' : '#233849' }}>
+                <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.5rem', fontWeight: 300, color: tier.highlight ? '#F5A623' : '#001E3A' }}>
                   {tier.price}
                 </span>
                 <a
                   href="#pricing"
-                  style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: tier.highlight ? '#1e70a0' : '#233849', textDecoration: 'none', borderBottom: `1px solid ${tier.highlight ? 'rgba(30,112,160,0.4)' : 'rgba(35,56,73,0.3)'}`, paddingBottom: 1 }}
+                  style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: tier.highlight ? '#F5A623' : '#001E3A', textDecoration: 'none', borderBottom: `1px solid ${tier.highlight ? 'rgba(30,112,160,0.4)' : 'rgba(35,56,73,0.3)'}`, paddingBottom: 1 }}
                 >
                   See plan →
                 </a>

@@ -28,7 +28,7 @@ const STATS = [
 
 export default function HeroStats() {
   return (
-    <section style={{ backgroundColor: '#233849' }}>
+    <section style={{ backgroundColor: '#001E3A' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
         <motion.div
           variants={staggerContainer}
@@ -51,7 +51,7 @@ export default function HeroStats() {
               {i < STATS.length - 1 && (
                 <div style={{ position: 'absolute', right: 0, top: '20%', height: '60%', width: 1, background: 'rgba(255,255,255,0.1)' }} />
               )}
-              <div style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#1e70a0', lineHeight: 1, marginBottom: '0.5rem', fontVariantNumeric: 'tabular-nums' }}>
+              <div style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#F5A623', lineHeight: 1, marginBottom: '0.5rem', fontVariantNumeric: 'tabular-nums' }}>
                 {stat.value === '24/7' ? '24/7' : (
                   <>
                     {stat.value.startsWith('$') && '$'}

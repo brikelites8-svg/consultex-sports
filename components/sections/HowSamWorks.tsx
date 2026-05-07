@@ -23,7 +23,7 @@ const STEPS = [
 
 export default function HowSamWorks() {
   return (
-    <section id="how-it-works" style={{ backgroundColor: '#f0f0f4', padding: 'var(--space-section) 0' }}>
+    <section id="how-it-works" style={{ backgroundColor: '#F7F9FB', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
 
         <motion.div
@@ -34,7 +34,7 @@ export default function HowSamWorks() {
           style={{ marginBottom: 'clamp(3.5rem, 6vw, 5rem)' }}
         >
           <motion.p variants={fadeUp} className="section-label">How Sam® Works</motion.p>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#233849', marginBottom: '1rem' }}>
+          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, color: '#001E3A', marginBottom: '1rem' }}>
             Insights → Strategy → Execution.
           </motion.h2>
           <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.7, color: '#5A6A7A', maxWidth: 520 }}>
@@ -65,16 +65,16 @@ export default function HowSamWorks() {
               <motion.div key={step.label} variants={fadeUp} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 {/* Step bubble */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-                  <div style={{ width: 56, height: 56, borderRadius: '50%', border: '1px solid rgba(35,56,73,0.18)', backgroundColor: '#fefefe', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.2rem', fontWeight: 300, color: '#233849' }}>
+                  <div style={{ width: 56, height: 56, borderRadius: '50%', border: '1px solid rgba(35,56,73,0.18)', backgroundColor: '#EEF2F7', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.2rem', fontWeight: 300, color: '#001E3A' }}>
                       0{i + 1}
                     </span>
                   </div>
                 </div>
-                <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1e70a0' }}>
+                <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#F5A623' }}>
                   {step.label}
                 </p>
-                <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#233849', lineHeight: 1.3 }}>
+                <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#001E3A', lineHeight: 1.3 }}>
                   {step.title}
                 </h3>
                 <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.75, color: '#5A6A7A' }}>

@@ -146,7 +146,7 @@ export function GlowyWavesHero() {
       mouseRef.current.y += (targetMouseRef.current.y - mouseRef.current.y) * smoothing
 
       const grad = ctx.createLinearGradient(0, 0, 0, canvas.height)
-      grad.addColorStop(0, '#233849')
+      grad.addColorStop(0, '#001E3A')
       grad.addColorStop(1, '#1b2c3a')
       ctx.fillStyle = grad
       ctx.fillRect(0, 0, canvas.width, canvas.height)
@@ -201,7 +201,7 @@ export function GlowyWavesHero() {
               backdropFilter: 'blur(12px)',
             }}
           >
-            <Sparkles style={{ width: 14, height: 14, color: '#1e70a0' }} aria-hidden="true" />
+            <Sparkles style={{ width: 14, height: 14, color: '#F5A623' }} aria-hidden="true" />
             <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.72)' }}>
               The Student-Athlete Success Platform
             </span>
@@ -213,7 +213,7 @@ export function GlowyWavesHero() {
               Introducing
             </span>
             {' '}
-            <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.75rem, 3vw, 2.75rem)', fontWeight: 600, color: '#1e70a0', letterSpacing: '0.03em' }}>
+            <span style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.75rem, 3vw, 2.75rem)', fontWeight: 600, color: '#F5A623', letterSpacing: '0.03em' }}>
               Sam®
             </span>
           </motion.div>
@@ -251,7 +251,7 @@ export function GlowyWavesHero() {
             development, NIL strategy, academic success, financial literacy, and career pathway.
             Five dimensions. One platform. Delivered in the voice of Sam Mitchell, NBA Coach of
             the Year.{' '}
-            <span style={{ color: '#1e70a0', fontWeight: 500 }}>Starting at $25/month.</span>
+            <span style={{ color: '#F5A623', fontWeight: 500 }}>Starting at $25/month.</span>
           </motion.p>
 
           {/* CTAs */}
@@ -335,7 +335,7 @@ export function GlowyWavesHero() {
                 <div style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.38)', marginBottom: '0.4rem' }}>
                   {stat.label}
                 </div>
-                <div style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.75rem, 3vw, 2.75rem)', fontWeight: 300, color: '#1e70a0', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
+                <div style={{ fontFamily: 'var(--font-editorial)', fontSize: 'clamp(1.75rem, 3vw, 2.75rem)', fontWeight: 300, color: '#F5A623', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
                   {stat.value === '24/7' ? '24/7' : (
                     <>
                       {stat.value.startsWith('$') && '$'}

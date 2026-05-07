@@ -59,13 +59,13 @@ const SERVICES = [
 
 export default function ServicesInDepth() {
   return (
-    <section id="services" style={{ backgroundColor: '#fefefe', padding: 'var(--space-section) 0' }}>
+    <section id="services" style={{ backgroundColor: '#EEF2F7', padding: 'var(--space-section) 0' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem' }}>
 
         {/* Header */}
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={VIEWPORT_ONCE} style={{ marginBottom: 'clamp(3rem, 5vw, 4.5rem)' }}>
           <motion.p variants={fadeUp} className="section-label">Services In Depth</motion.p>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#233849', maxWidth: 480 }}>
+          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 400, fontStyle: 'italic', color: '#001E3A', maxWidth: 480 }}>
             What Sam® actually delivers.
           </motion.h2>
           <motion.p variants={fadeUp} style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.7, color: '#5A6A7A', maxWidth: 560, marginTop: '0.75rem' }}>
@@ -81,15 +81,15 @@ export default function ServicesInDepth() {
           viewport={VIEWPORT_ONCE}
           style={{ backgroundColor: '#FFFFFF', borderRadius: 6, padding: 'clamp(2rem, 4vw, 3rem)', boxShadow: '0 4px 32px rgba(35,56,73,0.08)', marginBottom: '1.5rem', position: 'relative', overflow: 'hidden' }}
         >
-          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: '#233849' }} />
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: '#001E3A' }} />
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'start' }} className="nil-grid">
             {/* Left */}
             <div>
-              <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1e70a0', marginBottom: '0.75rem' }}>
+              <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#F5A623', marginBottom: '0.75rem' }}>
                 Signature Services
               </p>
-              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 600, color: '#233849', lineHeight: 1.2, marginBottom: '1rem' }}>
+              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h2)', fontWeight: 600, color: '#001E3A', lineHeight: 1.2, marginBottom: '1rem' }}>
                 NIL Strategy Briefings
               </h3>
               <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-body)', lineHeight: 1.75, color: '#5A6A7A', marginBottom: '1.5rem' }}>
@@ -103,7 +103,7 @@ export default function ServicesInDepth() {
                   '30-day action plan — specific steps, deadlines, and owners with Robi® live walkthrough',
                 ].map(b => (
                   <li key={b} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                    <span style={{ color: '#1e70a0', flexShrink: 0, marginTop: 4, fontSize: '0.6rem' }}>◆</span>
+                    <span style={{ color: '#F5A623', flexShrink: 0, marginTop: 4, fontSize: '0.6rem' }}>◆</span>
                     <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', lineHeight: 1.6, color: '#5A6A7A' }}>{b}</span>
                   </li>
                 ))}
@@ -113,9 +113,9 @@ export default function ServicesInDepth() {
             {/* Right: 2x2 tiles */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               {NIL_TILES.map(tile => (
-                <div key={tile.num} style={{ padding: '1.25rem', backgroundColor: '#fefefe', borderRadius: 4, border: '1px solid rgba(35,56,73,0.07)' }}>
+                <div key={tile.num} style={{ padding: '1.25rem', backgroundColor: '#EEF2F7', borderRadius: 4, border: '1px solid rgba(35,56,73,0.07)' }}>
                   <div style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.5rem', fontWeight: 300, color: 'rgba(35,56,73,0.2)', lineHeight: 1, marginBottom: '0.5rem' }}>{tile.num}</div>
-                  <div style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.05rem', fontWeight: 600, color: '#233849', marginBottom: '0.5rem' }}>{tile.title}</div>
+                  <div style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.05rem', fontWeight: 600, color: '#001E3A', marginBottom: '0.5rem' }}>{tile.title}</div>
                   <div style={{ fontFamily: 'var(--font-ui)', fontSize: '0.8rem', lineHeight: 1.55, color: '#5A6A7A' }}>{tile.desc}</div>
                 </div>
               ))}
@@ -147,7 +147,7 @@ export default function ServicesInDepth() {
                   {svc.label}
                 </p>
               )}
-              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#233849', marginBottom: '0.875rem', lineHeight: 1.25 }}>
+              <h3 style={{ fontFamily: 'var(--font-editorial)', fontSize: 'var(--text-h3)', fontWeight: 600, color: '#001E3A', marginBottom: '0.875rem', lineHeight: 1.25 }}>
                 {svc.title}
               </h3>
               <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', lineHeight: 1.7, color: '#5A6A7A', marginBottom: '1.25rem' }}>
@@ -156,7 +156,7 @@ export default function ServicesInDepth() {
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 {svc.bullets.map(b => (
                   <li key={b} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                    <span style={{ color: '#1e70a0', flexShrink: 0, marginTop: 3, fontSize: '0.6rem' }}>◆</span>
+                    <span style={{ color: '#F5A623', flexShrink: 0, marginTop: 3, fontSize: '0.6rem' }}>◆</span>
                     <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-small)', lineHeight: 1.55, color: '#5A6A7A' }}>{b}</span>
                   </li>
                 ))}

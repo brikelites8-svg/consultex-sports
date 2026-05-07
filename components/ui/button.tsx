@@ -25,13 +25,13 @@ const SIZES: Record<ButtonSize, React.CSSProperties> = {
 }
 
 const VARIANTS: Record<ButtonVariant, React.CSSProperties> = {
-  default: { background: '#1e70a0', color: '#FFFFFF' },
+  default: { background: '#F5A623', color: '#FFFFFF' },
   outline: {
-    background: 'transparent', color: '#1e70a0',
-    border: '1px solid #1e70a0',
+    background: 'transparent', color: '#F5A623',
+    border: '1px solid #F5A623',
   },
   ghost: { background: 'transparent', color: 'rgba(255,255,255,0.8)', border: '1px solid rgba(255,255,255,0.25)' },
-  ai:    { background: '#233849', color: '#FFFFFF' },
+  ai:    { background: '#001E3A', color: '#FFFFFF' },
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
