@@ -24,9 +24,8 @@ export default function Footer() {
         >
           {/* Brand */}
           <motion.div variants={fadeUp}>
-            <div style={{ marginBottom: '0.5rem' }}>
-              <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.5rem', fontWeight: 600, color: '#FFFFFF', letterSpacing: '0.03em' }}>Sam®</span>
-              <span style={{ fontFamily: 'var(--font-ui)', fontSize: '0.6rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.3)', marginLeft: 10 }}>by Consultex</span>
+            <div style={{ marginBottom: '1.5rem' }}>
+              <img src="/Consultex_LogoWhite.png" alt="Consultex Sports" style={{ height: 50, width: 'auto' }} />
             </div>
             <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-label)', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)', marginBottom: '1.5rem' }}>
               Human Expertise, Agentic Execution

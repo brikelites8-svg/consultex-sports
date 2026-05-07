@@ -51,13 +51,8 @@ export default function Navbar() {
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 60 }}>
 
         {/* Logo */}
-        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
-          <span style={{ fontFamily: 'var(--font-editorial)', fontSize: '1.4rem', fontWeight: 600, color: '#FFFFFF', letterSpacing: '0.03em' }}>
-            Consultex
-          </span>
-          <span style={{ fontFamily: 'var(--font-ui)', fontSize: '0.6rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)' }}>
-            Sports
-          </span>
+        <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', height: 40 }}>
+          <img src="/Consultex_LogoWhite.png" alt="Consultex Sports" style={{ height: '100%', width: 'auto' }} />
         </a>
 
         {/* Desktop links */}
