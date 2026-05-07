@@ -29,8 +29,8 @@ export default function SamQuote() {
   }, [])
 
   return (
-    // Outer container is 3× viewport tall — provides the scroll distance to scrub through
-    <div ref={containerRef} style={{ position: 'relative', height: '300vh' }}>
+    // Outer container is 150vh tall — provides smooth scroll distance
+    <div ref={containerRef} style={{ position: 'relative', height: '150vh' }}>
 
       {/* Sticky viewport-height panel */}
       <div style={{ position: 'sticky', top: 0, height: '100svh', overflow: 'hidden' }}>
@@ -82,10 +82,10 @@ export default function SamQuote() {
         }}>
 
           <motion.blockquote
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            viewport={{ once: false, margin: '0px 0px -100px 0px' }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            viewport={{ once: true, margin: '0px 0px -200px 0px' }}
             style={{ margin: 0 }}>
             <p style={{
               fontFamily: 'var(--font-editorial)',
@@ -103,15 +103,15 @@ export default function SamQuote() {
           </motion.blockquote>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-            viewport={{ once: false, margin: '0px 0px -100px 0px' }}>
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+            viewport={{ once: true, margin: '0px 0px -200px 0px' }}>
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
-              transition={{ duration: 0.6, delay: 0.4, ease: 'easeOut' }}
-              viewport={{ once: false, margin: '0px 0px -100px 0px' }}
+              transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+              viewport={{ once: true, margin: '0px 0px -200px 0px' }}
               style={{ width: 40, height: 1, background: '#F5A623', margin: '0 auto 1.5rem', originX: 0.5 }} />
             <p style={{
               fontFamily: 'var(--font-ui)',
