@@ -1,6 +1,7 @@
 import Navbar from '@/components/nav/Navbar'
 import Hero from '@/components/sections/Hero'
 import SamMitchell from '@/components/sections/SamMitchell'
+import SportsVideoShowcase from '@/components/sections/SportsVideoShowcase'
 import FivePillars from '@/components/sections/FivePillars'
 import SportsCapabilities from '@/components/sections/SportsCabilities'
 import HowSamWorks from '@/components/sections/HowSamWorks'
@@ -19,6 +20,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SamMitchell />
+      <SportsVideoShowcase />
       <FivePillars />
       <SamQuote />
       <HowSamWorks />
